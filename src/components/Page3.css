@@ -1,0 +1,245 @@
+body,
+html,
+.App {
+  margin: 0;
+  padding: 0;
+  font-family: "Michroma", sans-serif;
+  box-sizing: border-box;
+  background: black;
+  color: white;
+}
+
+.header {
+  width: 100%;
+  height: 50px;
+  background-color: grey;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0 20px;
+  box-sizing: border-box;
+  z-index: 10;
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+}
+
+.diamond-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.text {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.username {
+  margin-left: 10px;
+  font-size: 16px;
+}
+
+.breadcrumb {
+  padding: 10px 20px;
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #ddd;
+}
+
+.product-details {
+  display: flex;
+  padding: 60px;
+  padding-bottom:40px;
+  /* margin-top:20px; */
+  font-family: "Michroma", sans-serif;
+}
+
+.Product {
+  margin: 30px 0;
+  margin-left: 20px;
+}
+
+.product-info {
+  margin-left: 20px;
+}
+
+.product-info h1 {
+  font-size: 50px;
+  margin: 0;
+}
+
+.product-info p {
+  font-size: 20px;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+
+.ring {
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+button {
+  margin-right: 10px;
+  padding: 10px 20px;
+  background-color: grey;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.footer {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.footer-section h3 {
+  margin-top: 0;
+}
+
+.footer-section p {
+  margin: 5px 0;
+}
+.fa {
+  font-size: 40px;
+
+  margin-top: 10px;
+}
+.Delivery {
+  width: 300px;
+  height: 100px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.Reviews {
+  /* margin-left: 20px; */
+  margin-top: 50px;
+}
+input[type="radio"] {
+  display: none;
+}
+.star {
+  cursor: pointer;
+}
+.Add {
+  background-color: #d3d3d3; /* Light gray background */
+  border: none; /* Remove default border */
+  color: black; /* Text color */
+  padding: 10px 20px; /* Padding around text */
+  text-align: center; /* Center the text */
+  text-decoration: none; /* Remove underline */
+  display: inline-block; /* Make it inline-block */
+  font-size: 16px; /* Font size */
+  border-radius: 15px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-family: "Michroma", sans-serif; /* Font family */
+}
+.Add:hover {
+  background-color: #c0c0c0; /* Slightly darker gray on hover */
+}
+.Buy {
+  background-color: #d3d3d3; /* Light gray background */
+  border: none; /* Remove default border */
+  color: black; /* Text color */
+  padding: 10px 20px; /* Padding around text */
+  text-align: center; /* Center the text */
+  text-decoration: none; /* Remove underline */
+  display: inline-block; /* Make it inline-block */
+  font-size: 16px; /* Font size */
+  border-radius: 15px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-family: "Michroma", sans-serif; /* Font family */
+}
+.Buy:hover {
+  background-color: #c0c0c0; /* Slightly darker gray on hover */
+}
+
+.image {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  width:500px;
+}
+.image img {
+  height: 100px;
+  width: 100px;
+  background-color: Lightblue;
+  transition: transform 0.3s ease;
+}
+
+.image img:hover {
+  transform: scale(1.1);
+}
+
+.image-placeholder {
+  width: 500px;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  border: 1px solid #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  transition: opacity 0.3s;
+}
+.fa-heart,
+.fa-heart-o {
+  position: absolute;
+  top: 5px; /* Adjust if needed */
+  right: 15px; /* Adjust if needed */
+  font-size: 37px;
+  color: white; /* Ensure the icon is visible */
+  cursor: pointer;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-button-prev {
+  margin-right: 10px;
+}
+
+.swiper-button-next {
+  margin-left: 10px;
+}
+.Delivery img{
+  width: 500px;
+  background-color:black;
+}
+
+textarea{
+  background-color:black;
+  color:white;
+}

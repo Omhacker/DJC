@@ -1,0 +1,207 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Banner section */
+.banner {
+  position: relative;
+  text-align: center;
+}
+
+.banner-image {
+  margin-top: 20px;
+  width: 100%;
+  height: 35vh;
+  object-fit: cover;
+}
+
+.banner-content {
+  position: absolute;
+  top: 50%;
+  left: 12%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+}
+
+.banner-content h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+/* Filters section */
+.filters {
+  background-color: #333;
+  padding: 20px;
+  text-align: center;
+}
+
+.filters h3 {
+  color: white;
+}
+
+.filters h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.filters h2 span {
+  font-weight: normal;
+  color: white;
+}
+
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.filter-buttons button {
+  padding: 10px 20px;
+  border: none;
+  color: black;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.filter-buttons button:hover {
+  background-color: #ddd;
+}
+
+/* Rings grid section */
+.rings-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.ring-card {
+  background-color: black; /* Changed to black */
+  border: 2px solid #F2EFE5;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: relative;
+  color: white; /* Changed to white */
+  transition: transform 0.3s ease; /* Added transition for hover effect */
+}
+
+.ring-card:hover {
+  transform: scale(1.05); /* Added hover effect */
+  border: 1px solid #ddd;
+}
+
+.ribbon {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: orange;
+  color: white;
+  padding: 5px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.ring-image {
+  height:300px;
+  width:100%;  
+  
+}
+
+.ring-image img{
+  width: 100%;
+  height: 200px;
+  object-fit: fill;
+}
+.ring-info {
+  padding: 20px;
+}
+
+.ring-info h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 20px;
+  color: #ff6f61;
+  margin-bottom: 5px;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.discount {
+  color: #ff6f61;
+  margin-bottom: 10px;
+}
+
+.metal,
+.diamond {
+  color: #ccc; /* Changed to a lighter gray for better contrast */
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.like-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: white;
+  outline: none; /* Remove default focus outline */
+}
+
+.like-button:focus {
+  outline: none; /* Remove focus outline */
+}
+
+.like-button:hover {
+  color: red; /* Changed to red for hover effect */
+  background: none;
+}
+
+.filters {
+  background-color: #000000;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.filter-selects {
+  display: flex;
+  justify-content: space-between;
+  padding:15px 100px;
+}
+.filter-selects div {
+  display: flex;
+  color: #fff;
+}
+
+.filter-selects select {
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: rgb(0, 0, 0);
+  font-size: 14px;
+  color: #f0f0f0;
+  cursor: pointer;
+}

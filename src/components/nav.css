@@ -1,0 +1,156 @@
+.navbar {
+  width: 80%; /* Use percentage to stay within the screen width */
+  margin: 0;
+  font-family: Michroma, sans-serif;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px; /* Adjusted for padding */
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+  color: white;
+  z-index: 10;
+  position: fixed; /* Changed to fixed positioning */
+  top: 0; /* Stick to the top */
+  left: 0; /* Stick to the left */
+  backdrop-filter: blur(10px);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  width: 50px; /* Set the width of the logo */
+}
+
+.win {
+  font-size: larger;
+  display: block;
+}
+
+.mob {
+  display: none;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  position: relative;
+  gap: 15px;
+}
+
+.icon span {
+  cursor: pointer;
+}
+
+.icon span:hover {
+  color: #ffb74c;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 38px;
+  height: 38px;
+  transition: width 0.3s ease;
+  background-color: #000000;
+  border-radius: 50px;
+  border: 0.5px solid white;
+}
+
+.search-bar:hover,
+.search-bar:focus-within {
+  width: 200px;
+}
+
+.search-bar input {
+  width: 100%;
+  margin-right: 18px;
+  padding: 15px;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: white;
+  display: block;
+  font-family: Michroma, sans-serif;
+  font-size: xx-small;
+}
+
+.search-bar input::placeholder {
+  color: transparent;
+}
+
+.search-bar:hover input::placeholder,
+.search-bar:focus-within input::placeholder {
+  color: white;
+}
+
+.search-icon {
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  right: 9px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.search-icon:hover {
+  color: rgb(255, 183, 76);
+}
+
+.username {
+  color: white;
+  display: inline;
+}
+
+.like-count {
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 12px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar {
+    height: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .username {
+    display: none;
+  }
+
+  .search-bar:hover,
+  .search-bar:focus-within {
+    width: 120px;
+  }
+
+  .logo img {
+    width: 40px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .win {
+    font-size: medium;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .win {
+    display: none;
+  }
+
+  .mob {
+    display: block;
+  }
+}
